@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>
+      // Create a "Calculator" application <br />
+      // Aritmetic => "+", "-", "*", "/", "%", "**"
+    </h1>
+    <script>
+      let number1 = +prompt("Enter your first Number");
+      let number2 = +prompt("Enter your second Number");
+      let operator = prompt(
+        'Enter any one among these  => "+", "-", "*", "/", "%", "**"'
+      );
+      switch (operator) {
+        case "+":
+          answer = number1 + number2;
+          break;
+        case "-":
+          answer = number1 - number2;
+          break;
+        case "*":
+          answer = number1 * number2;
+          break;
+        case "/":
+          answer = number1 / number2;
+          break;
+        case "%":
+          answer = number1 % number2;
+          break;
+        case "**":
+          answer = number1 ** number2;
+          break;
+        default:
+          answer = "Enter the Correct Operator";
+      }
+
+      document.write("--------------------------------</br>");
+      document.write("Simple Arithematic Calculator</br>");
+      document.write("--------------------------------</br>");
+      document.write(`Number one is ${number1}</br>`);
+      document.write(`Number two is ${number2}</br>`);
+      document.write(`Operation is ${number1} ${operator} ${number2}</br> `);
+      document.write(`answer is ${answer}`);
+    </script>
+  </body>
+</html>
